@@ -21,7 +21,7 @@ class PolylineAnnotationController: NSObject, FLT_PolylineAnnotationMessager {
                 completion(nil, FlutterError(code: PolylineAnnotationController.errorCode, message: "No manager found with id: \(managerId)", details: nil))
             }
         } catch {
-            completion(nil, FlutterError(code: PolylineAnnotationController.errorCode, message: "No manager found with id: \(managerId)", details: nil))
+            completion(nil, FlutterError(code: PolylineAnnotationController.errorCode, message: "No manager found with id: \(managerId), caught error: \(error as AnyObject), description: \(error.localizedDescription)", details: nil))
         }
     }
 
@@ -40,7 +40,7 @@ class PolylineAnnotationController: NSObject, FLT_PolylineAnnotationMessager {
                 completion(nil, FlutterError(code: PolylineAnnotationController.errorCode, message: "No manager found with id: \(managerId)", details: nil))
             }
         } catch {
-            completion(nil, FlutterError(code: PolylineAnnotationController.errorCode, message: "No manager found with id: \(managerId)", details: nil))
+            completion(nil, FlutterError(code: PolylineAnnotationController.errorCode, message: "No manager found with id: \(managerId), caught error: \(error as AnyObject), description: \(error.localizedDescription)", details: nil))
         }
     }
 
